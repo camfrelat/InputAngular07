@@ -1,0 +1,16 @@
+<div>
+  <h1>Liste des dévelopeurs</h1>
+  <div>
+    <ul>
+      <li>Nom : {{ developer.lastname }}</li>
+      <li>Prénom : {{ developer.firstname }}</li>
+      <li>Age : {{ developer.age }}</li>
+      <li>Sexe : {{ developer.sexe }}</li>
+      <li>Description : {{ developer.bio }}</li>
+    </ul>
+  </div>
+</div>
+
+<div *ngFor="let skill of developer.skills">
+  <app-skill [skill]="skill"></app-skill>
+</div>
